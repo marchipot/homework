@@ -1,0 +1,19 @@
+body{
+    
+    margin: auto;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+}
+.card{
+    height: 50%;
+}
+#root{
+    display: flex;
+    margin: auto;
+    margin-top:12.5%;
+    justify-content: center;
+    flex-direction: column;
+}

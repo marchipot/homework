@@ -1,0 +1,23 @@
+.season{
+    display: none;
+}
+
+body{
+    
+    margin: auto;
+    background: url("https://images.pexels.com/photos/1250260/pexels-photo-1250260.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center center fixed;
+    text-align: center;
+}
+
+#root{
+    display: flex;
+    margin: auto;
+    margin-top:12.5%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.output{
+    color: aliceblue;
+    margin-top:15px; 
+}
