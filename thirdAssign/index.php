@@ -1,31 +1,5 @@
-<?php 
-$books = [
-    "book1" => [
-        "name" => "Pixel Perfect",
-        "author" => "Tal Shachar",
-        "pages" => "99"
-    ],
-
-    "book2" => [
-        "name" => "linux revolting",
-        "author" => "Moshe",
-        "pages" => "111"
-    ],
-
-    "book3" => [
-        "name" => "upfront of the front-end",
-        "author" => "Ruth",
-        "pages" => "333"
-    ],
-
-    "book4" => [
-        "name" => "GoLocal",
-        "author" => "Emi",
-        "pages" => "99"
-    ],
-
-
-];
+<?php  require_once('./config.php');
+$books = [];
 ?>
 
 <!DOCTYPE html>
@@ -49,20 +23,26 @@ $books = [
 
     <div id="root">
     <p>
-        <?php 
 
-            foreach ($books as $key => $value) {
-              if($value["pages"] > 100){
-                  foreach ($value as $k => $v) {
-                      echo $k . " : " . $v  . " \n";
-                  }
-              }
-            }
 
-        ?>
-        </p>
+    <form action="" name="books" method="post">
+
+    <input type="text" class="name" id="bookName" placeholder="type the book name">
+    <input type="text" class="author" id="authorName" placeholder="type the author ame">
+    <input type="number" class="pages" id="pagesNum" placeholder="type the pages number">
+    <button id="submit">Send</button>
+
+
+    </form>
+     
+       
+    </div>
+    <div id="output"> 
+    
     </div>
     <script src="main.js"></script>
 </body>
+<?php
 
+?>
 </html>

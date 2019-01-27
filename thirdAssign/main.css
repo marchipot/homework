@@ -1,0 +1,19 @@
+#root{
+    display: flex;
+    margin-top: 5em;
+    align-content: center;
+    
+    justify-content: center;
+    
+    
+}
+
+#output{
+    display: flex;
+    margin-top: 5em;
+    align-content: center;
+    
+    justify-content: center;
+    
+    
+}

@@ -22,6 +22,7 @@
             <div class="output">
             </div>
             <select id="mySelect" class="ui fluid dropdown">
+            
             </select>
         </form>
         <br>
