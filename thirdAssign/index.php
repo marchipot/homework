@@ -1,4 +1,4 @@
-< <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
 
     <head>
@@ -19,13 +19,13 @@
     <body>
 
         <div id="root">
-            <p>
+            
 
 
-                <form action="" name="books" method="post">
+                <form action="" name="books" class="ui form" method="post">
 
-                    <input type="text" class="name" id="bookName" placeholder="type the book name">
-                    <input type="text" class="author" id="authorName" placeholder="type the author ame">
+                    <input type="text" class="name " id="bookName" placeholder="type the book name">
+                    <input type="text" class="author" id="authorName" placeholder="type the author name">
                     <input type="number" class="pages" id="pagesNum" placeholder="type the pages number">
                     <button id="submit">Send</button>
 
@@ -39,8 +39,6 @@
         </div>
         <script src="main.js"></script>
     </body>
-    <?php
-
-?>
+ 
 
     </html>

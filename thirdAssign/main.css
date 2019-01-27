@@ -1,13 +1,11 @@
-#root{
-    display: flex;
-    margin-top: 5em;
-    align-content: center;
-    
-    justify-content: center;
-    
-    
+body{
+    margin: auto;
 }
-
+#root{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
 #output{
     display: flex;
     margin-top: 5em;

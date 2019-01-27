@@ -14,35 +14,34 @@ $(document).ready(function () {
     var $pages = $('.pages');
     var $books = $('#output');
     var $counter = 0;
-    var $h2 = `<h2 > ${$counter} books in list</h2>`;
+    var $h2 = `<h2 class="ui dividing header" > ${$counter} books in list</h2>`;
     $('#root').append($h2);
-        
-        $form.on('submit', (e) => {
-            e.preventDefault();
-    
-            var $nameVal = $name.val();
-            var $authorVal = $author.val();
-            var $pagesVal = $pages.val();
-            var $booksVal = $books.val();
-    
-            var booking = new book($nameVal, $authorVal, $pagesVal, $booksVal);
-            books.push(booking);
-           
-            var $newArray = books.filter(function(el){
-                return el.pages > 100;
-            })
 
-            console.log(books);
-            $counter = books.length;
-            
-            console.log($counter);
-            var $h2 = `<h2 > ${$counter} books in list</h2>`;
+    $form.on('submit', (e) => {
+        e.preventDefault();
 
-            $( "h2" ).html($h2);                
-           
-            if($counter == 4){
-                $("#root").hide();
-                
+        var $nameVal = $name.val();
+        var $authorVal = $author.val();
+        var $pagesVal = $pages.val();
+        var $booksVal = $books.val();
+
+        var booking = new book($nameVal, $authorVal, $pagesVal, $booksVal);
+        books.push(booking);
+
+        var $newArray = books.filter(function (el) {
+            return el.pages > 100;
+        })
+
+        console.log(books);
+        $counter = books.length;
+
+        console.log($counter);
+        var $h2 = `<h2 class="ui dividing header" > ${$counter} books in list</h2>`;
+
+        $("h2").html($h2);
+        if ($counter == 4) {
+            $("#root").hide();
+
             var $template = `
             <div class="ui link cards">
   <div class="card">
@@ -67,15 +66,13 @@ $(document).ready(function () {
                 var pages = $newArray[i].pages;
                 var divContent = $template.replace('%name%', name).replace("%author%", author).replace("%pages%", pages);
                 $books.append(divContent);
-                
+
             }
-                $("#output").show();
-                
-            }
-            });
-            
-    
-   
+            $("#output").show();
+
+        }
     });
 
 
+
+});
